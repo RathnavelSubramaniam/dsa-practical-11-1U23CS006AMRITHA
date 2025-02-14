@@ -13,12 +13,10 @@ public int size()
 }
 public void push(int data) 
 {
-     if(isFull()){
+     if(isFull())
         System.out.println("Stack is Overflow. Not Possible to insert in Full stack");
-     }
      else{
-        top++;
-    stack[top]=data;
+    stack[++top]=data;
     System.out.println("Element is inserted");
      }
 }
@@ -26,7 +24,7 @@ public int pop()
 {
 int data=-1;
      if(isEmpty()){
-     System.out.println("Stack is Underflow. No elements to be popped in Empty Stack");
+     System.out.println("Stack is Underflow. No elements to be popped in Empty Stack") ;
      }
     else{
     data=stack[top];
@@ -40,14 +38,8 @@ public boolean isFull()
 }
 public boolean isEmpty()
 {
-    if(top<0)
-    {
-        return true;
-    }
-    else{
-        return false;
-    }
-}
+    return (top<0);
+  }
 public void display()
 {
     if(isEmpty())
