@@ -30,7 +30,7 @@ int data=-1;
      }
     else{
     data=stack[top];
-    top--;
+    top-- ;
 }
 return data;
 }
