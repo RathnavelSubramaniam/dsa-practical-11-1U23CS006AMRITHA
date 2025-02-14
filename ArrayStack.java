@@ -20,6 +20,7 @@ public void push(int data)
     System.out.println("Element is inserted");
      }
 }
+
 public int pop() 
 {
 int data=-1;
