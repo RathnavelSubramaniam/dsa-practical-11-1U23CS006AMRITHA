@@ -14,7 +14,7 @@ public int size()
 public void push(int data) 
 {
      if(isFull()){
-        System.out.println("Stack is Overflow. Not Possible to insert in Full Stack");
+        System.out.println("Stack is Overflow. Not Possible to insert in Full stack");
      }
      else{
         top++;
@@ -30,7 +30,7 @@ int data=-1;
      }
     else{
     data=stack[top];
-    top-- ;
+    top--;
 }
 return data;
 }
